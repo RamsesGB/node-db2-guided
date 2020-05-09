@@ -8,7 +8,6 @@ const knexConfig = {
   useNullAsDefault: true, //This is something only required for SQLite
 };
 
-// this db variable represents a live connection to the database
-const db = knex(knexConfig);
+// knex(knexConfig) represents a live connection to the database
 
-module.exports = db;
+module.exports = knex(knexConfig);
